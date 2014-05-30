@@ -10,20 +10,22 @@ $request = array
 		'UserKey' => $user_key,	//第三方验证字符串
 		'MessageID' => '34837489M2CAO',	//客户请求号（可选项）
 		'Submit' => FALSE,		//是否提审，是则为true，否则为false
-		'Version' => 'V2.1',	//（可选项）
+		//'Version' => 'V2.1',	//（可选项）
 		/* 出库单详细信息 */
-		'OrderDetail' => array
+		'OrderDetailNew' => array
 		(
 			//'Remark' => 'm2c order test',	//出库单备注信息
-			'State' => 'Submitted',
-			'Warehouse' => 'US',
-			/* 装箱清单 */
-			'PackageList' => array(	
+			//'State' => 'Submitted',
+			'WarehouseNew' => 'US',
+            'Warehouse' => 'None',           //填None即可
+			/* 包裹列表 */
+			'PackageListNew' => array(	
 				'0' => array(
 					//'Custom' => 'test Custom XS1112003251',	//客户参考号
 					//'Remark' => 'API test',		//选填备注信息
-					'Shipping' => 'None',	//这里填None即可
-					'ShippingV2_1' => 'USRUS',
+					'Shipping' => 'None',               //填None即可
+					'ShippingV2_1' => 'None',           //填None即可
+					'ShippingNew' => 'USRUS',	//USRUS,USNUL
                     /* 产品信息列表 */
 					'ProductList' => array
 					(
@@ -58,7 +60,7 @@ $request = array
 echo "<pre>";
 //print_r($request);
 
-$result = $soap_client->M2CAddOrder($request);
+$result = $soap_client->M2CAddOrderNew($request);
 
 print_r($result);
 echo "</pre>";
