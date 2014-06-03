@@ -2,6 +2,8 @@
 
 require 'auth.php';
 
+//此方法已过时，推荐使用M2CAddOrderNew
+
 $request = array
 (
 	'request' => array
