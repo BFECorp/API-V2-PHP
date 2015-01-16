@@ -12,8 +12,10 @@ $request = array
 		'Token' => $token,	//系统验证字符串
 		'UserKey' => $user_key,	//第三方验证字符串
 		//'CustomUserKey' => '', //第三方自定义验证字符串
-		'Sign' => 'ETE131211TST000002',
-		'MessageID' => '3493849outstoreGP',	//客户请求号（可不填）
+		//'Sign' => 'ETE131211TST000002',
+		//'Custom' => 'Custom0003',	//客户自定义号
+		'RefNo' => 'RefNo0001',	//第三方单号
+		//'MessageID' => '3493849outstoreGP',	//客户请求号（可不填）
 		//'Version' => 'V2.1',
 	)
 );

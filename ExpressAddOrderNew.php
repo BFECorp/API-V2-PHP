@@ -16,7 +16,9 @@ $request = array(
 			'PickupType' => 0,
 			'PackageList' => array(
 				'0' => array(
-					//'Custom' => 'test customT1008-2-T02',
+					'Custom' => 'Custom0001',   //客户参考号
+					'RefNo' => 'RefNo0001',
+					'CheckRepeatRefNo' => 'True',
 					'ProductList' => array
 					(
 						'0' => array
@@ -53,7 +55,9 @@ $request = array(
 					),
                 ),
 				'1' => array(
-					'Custom' => 'test customT1008-2-T02',
+					'Custom' => 'Custom0002',
+					'RefNo' => 'RefNo0002',
+					'CheckRepeatRefNo' => 'True',
 					'ProductList' => array
 					(
 						'0' => array

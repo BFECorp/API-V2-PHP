@@ -13,7 +13,9 @@ $request = array(
         'Location' => 'SH',
         'PickupType' => 0,  // 填0即可
         'PackageDetail' => array(
-            'Custom' => 'T1008-2-T02tt',
+            'Custom' => 'Custom0003',   //客户参考号
+            'RefNo' => 'RefNo0003',
+            'CheckRepeatRefNo' => 'True',
             'ProductList' => array
             (
                 array

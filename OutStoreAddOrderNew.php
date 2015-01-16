@@ -21,7 +21,9 @@ $request = array
                 (
                     '0' => array
                     (
-                        'Custom' => 'P122130ForPackage0',	//客户参考号
+                        'Custom' => 'Custom0001',   //客户参考号
+                        'RefNo' => 'RefNo0001',
+                        'CheckRepeatRefNo' => 'True',
                         'Remark' => 'Remark API test',		//备注信息
                         'Shipping' => 'None',               //填None即可
                         'ShippingV2_1' => 'None',           //填None即可
@@ -60,7 +62,9 @@ $request = array
                     ),
                     '1' => array
                     (
-                        'Custom' => 'P122130ForPackage1',	//客户参考号
+                        'Custom' => 'Custom0002',   //客户参考号
+                        'RefNo' => 'RefNo0002',
+                        'CheckRepeatRefNo' => 'True',
                         //'Sign' => '123',		//数据库其字段名为package_sign
                         'Remark' => 'Remark API test',		//备注信息
                         'Shipping' => 'None',
